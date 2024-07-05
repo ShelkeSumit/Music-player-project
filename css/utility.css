@@ -1,0 +1,166 @@
+:root{
+    --a:0;
+}
+.border{
+    border:2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background:black;
+    color: white;
+}
+.invert{
+    filter:invert(1) ;
+}
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 10px;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding:23px 14px ;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 30px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+    bottom: 0;
+
+}
+.footer{
+    display: flex;
+    font-size: 9px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 ;
+
+}
+.footer a{
+    color: gray;
+}
+.right{
+    margin: 16px 0;
+    position: relative;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+
+}
+.header > *{
+    padding: 20px;
+}
+.splaylist{
+    padding: 16px ;
+}
+.splaylist h1{
+    padding:10px ;
+}
+.cardcontainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto ;
+    max-height: 80vh;
+}
+.card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+
+}
+
+.card > *{
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card:hover{
+    cursor: pointer;
+    background-color: #777676;
+    --a:1;
+}
+.play {
+    width: 28px;
+    height: 28px;
+    background-color:#e40036;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 168px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+ Style for WebKit browsers (Chrome, Safari) 
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+  }
+  
+  Style for Firefox
+   {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #1a1a1a;
+  }
+  
+   Style for Microsoft Edge and IE */
+   *::-ms-scrollbar {
+    width: 20px;
+  }
+  
+  *::-ms-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  *::-ms-scrollbar-track {
+    background-color: #1a1a1a;
+  } 
+   

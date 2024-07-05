@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #130d28;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Signup</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="tel" id="mobile" placeholder="Mobile Number">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="validateSignup()">Sign Up</button>
+    <p id="message"></p>
+</div>
+
+<script>
+function validateSignup() {
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+    var password = document.getElementById('password').value;
+
+    if (email && mobile && password) {
+        // Simulating signup process
+        // Here you can send data to backend or perform any other necessary actions
+        showMessage("Successfully signed up!");
+    } else {
+        showMessage("Please enter all information.");
+    }
+}
+
+function showMessage(msg) {
+    document.getElementById('message').innerText = msg;
+}
+</script>
+
+</body>
+</html>
